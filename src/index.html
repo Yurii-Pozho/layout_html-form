@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset class="container">
         <legend>Personal information</legend>
 
@@ -51,7 +53,7 @@
           >
         </label>
 
-        <label class="form-field position-bottom">
+        <label class="form-field">
           I accept the term of the agreement
           <input type="checkbox" name="termOfAgreement">
         </label>
@@ -69,7 +71,7 @@
           >
         </label>
 
-        <label  class="form-field position-bottom">
+        <label  class="form-field">
           Password:
           <input
             type="password"
@@ -77,21 +79,19 @@
             minlength="1"
             maxlength="20"
           >
-
         </label>
       </fieldset>
 
       <fieldset class="container">
         <legend>An interesting fact about you!</legend>
         <div  class="form-field">
+          Do you love cats?
           <label>
-            Do you love cats?
             <input
               type="radio"
               name="loveCats"
                value="Y"
             >
-
             Yes
           </label>
 
@@ -118,13 +118,13 @@
         <label class="form-field">
           What are your favorite brand of cars?
           <select name="cars" multiple>
-            <option value="1">BMV</option>
-            <option value="2">Audi</option>
-            <option value="3">Lada</option>
+            <option value="1">bmv</option>
+            <option value="2">lada</option>
+            <option value="3">audi</option>
           </select>
         </label>
 
-        <label class="form-field position-bottom">
+        <label class="form-field">
           How do you rate our work?
           <input type="range" name="rate">
         </label>
@@ -138,7 +138,7 @@
           <textarea name="comments"></textarea>
         </label>
 
-        <label class="form-field position-bottom">
+        <label class="form-field">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
@@ -148,7 +148,7 @@
         </label>
       </fieldset>
 
-      
+
       <button class="button" type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
